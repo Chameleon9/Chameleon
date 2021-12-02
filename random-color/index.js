@@ -1,6 +1,3 @@
-const hexValues = ["1","2","3","4" 
-,"5","6","A","B","C"];
-
 let colorChangeButton = 
 document.getElementById("color-change-button") ;
  
@@ -10,14 +7,18 @@ const colorName = document.querySelector(".colorname");
  
 colorName.innerHTML = "White" ;
  
- colorChangeButton.addEventListener("click", function(){
-     
-let randomNumber = Math.floor(Math.random() * (colors.length - 1) + 1);
- 
-body.style.backgroundColor = colors[randomNumber];
- 
-colorName.innerHTML = colors[randomNumber];
- 
+colorChangeButton.addEventListener("click", function(){
+   
+let i1 = Math.floor(Math.random() * 255);8
+let i2 = Math.floor(Math.random() * 255);
+let i3 = Math.floor(Math.random() * 255);
+
+let colorValue ="RGB("+i1+","+i2+","+i3+")" ;
+console.log(colorValue);
+
+body.style.backgroundColor = colorValue ;
+colorName.innerHTML = colorValue
+
 }); 
  /*
  colorName.innerHTML = toUpperCase(colors.slice(0,1)) +
