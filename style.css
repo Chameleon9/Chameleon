@@ -210,13 +210,30 @@ a{
 				*{
 								font-size: 60%;
 				}
-    #buttons-color{
+    .buttons-color{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    a{
+    				padding: 5px 10px;
+    }
+    #simple-color, #random-color {
+    				max-width: 35%;
+    }
+}
+@media (max-device-width:320px){
+				*{
+								font-size: 50%;
+				}
+    .buttons-color{
         display: flex;
         flex-direction: column;
         width: 100%;
     }
     #simple-color, #random-color {
     				width: 80%;
+    				margin: auto auto;
     }
 }
 @media (max-device-height:2400px){
@@ -231,9 +248,4 @@ a{
         font-size: 4vh;
     }
     
-}
-@media (max-device-width:1080px){
-    *{
-        font-size: 120%;
-    }
 }
