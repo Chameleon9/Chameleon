@@ -1,23 +1,19 @@
 const colors = ["Red","Green","Silver","Purple" 
-,"Fuschia","Navy","Royalblue","Pink","Wheat","Magenta","Aliceblue","Antiquewhite","Aquamarine","Beize","Azure","Bisque","Bluevoilet","Cornflowerblue","Cornsilk","Deeppink","Hotpink"];
-
+,"Mintcream","Navy","Royalblue","Pink","Wheat","Magenta","Aliceblue","Antiquewhite","Aquamarine","Beize","Azure","Plum","Powderblue","Cornflowerblue","Cornsilk","Deeppink","Hotpink","Papayawhip","Peachpuff","Tomato","Springgreen","Steelblue","Skyblue"];
 let colorChangeButton = 
 document.getElementById("color-change-button") ;
  
 const body = document.body;
-
 const colorName = document.querySelector(".colorname");
  
 colorName.innerHTML = "White" ;
+body.style.backgroundColor = "White" ;
  
- colorChangeButton.addEventListener("click", function(){
-     
+colorChangeButton.addEventListener("click", function(){
+
 let randomNumber = Math.floor(Math.random() * (colors.length - 1) + 1);
- 
 body.style.backgroundColor = colors[randomNumber];
- 
 colorName.innerHTML = colors[randomNumber];
- 
 }); 
  /*
  colorName.innerHTML = toUpperCase(colors.slice(0,1)) +
