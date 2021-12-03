@@ -234,6 +234,6 @@ a{
 }
 @media (max-device-width:1080px){
     *{
-        font-size: 150%;
+        font-size: 120%;
     }
 }
