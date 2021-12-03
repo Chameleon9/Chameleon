@@ -16,113 +16,6 @@ body{
     animation: changeColor 120s 0s infinite;
     transition: 0.3s all;
 }
-nav{
-    height: 10vh;
-    width: 100%;
-    background-image: linear-gradient(to bottom , rgba(150,150,150,0.6) , rgba(250,250,250,0.1));
-    backdrop-filter: blur(10px);
-}
-nav>ul{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-nav>ul>li{
-    list-style-type: none;
-    margin: auto auto;
-}
-h1{
-    font-size: 3em;
-    margin: auto auto;
-    font-family: cursive ,Sans-Serif;
-}
-p{
-    font-size: 2em;
-    font-weight: bold;
-    font-family: cursive,Sans-Serif;
-    margin: 5px auto 20px auto;
-}
-.buttons-color, .buttons-gradient{
-    margin: 50px auto 10px;
-}
-a{
-    color: white;
-    background-color: black ;
-    border: none;
-    outline: none;
-    padding:15px 30px ;
-    text-decoration: none;
-    margin: 10px 25px;
-    
-}
-#simple-color{
-    animation: borderRadius1 10s 0s infinite;
-}
-#random-color{
-    animation: borderRadius2 10s 0s infinite;
-}
-#gradient{
-   animation: borderRadius3 10s 0s infinite;
-}
-@keyframes borderRadius1 {
-    0%{
-        border-radius: 20% 5px ;
-    }
-    25%{
-        border-radius: 50px 10% ;
-    }
-    50%{
-        border-radius: 0px 15px ;
-    }
-    75%{
-        border-radius: 10% 50px ;
-    }
-    100%{
-        border-radius: 20% 5px;
-    }
-}
-@keyframes borderRadius2 {
-    0%{
-        border-radius: 5px 20% ;
-    }
-    25%{
-        border-radius: 10% 50px ;
-    }
-    50%{
-        border-radius: 15px 0px ;
-    }
-    75%{
-        border-radius: 50px 10% ;
-    }
-    100%{
-        border-radius: 5px 20% ;
-    }
-}
-@keyframes borderRadius3 {
-    0%{
-        border-radius: 5px 0px ;
-    }
-    25%{
-        border-radius: 20% 20% ;
-    }
-    50%{
-        border-radius: 0px 0px 15px 15px ;
-    }
-    75%{
-        border-radius: 20% 20% ;
-    }
-    100%{
-        border-radius: 5px 0px ;
-    }
-}
-.main{
-    height:100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-}
-
 @keyframes changeColor {
     0%{
         background-color: #FF9292;
@@ -188,20 +81,136 @@ a{
         background-color: #FF9292;
     }
 }
-@media (max-device-width:435px) {
-    h1{
-        font-size: 1.8em;
+nav{
+    height: 10vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom , rgba(150,150,150,0.6) , rgba(250,250,250,0.1));
+    backdrop-filter: blur(10px);
+    position: fixed;
+}
+nav>ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav>ul>li{
+    list-style-type: none;
+    margin: auto auto;
+}
+h1{
+    font-size: 3em;
+    margin:auto auto auto auto;
+    font-family: cursive ,Sans-Serif;
+}
+p{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: cursive,Sans-Serif;
+    margin: 10vh auto 20px auto;
+}
+.buttons-color, .buttons-gradient{
+    margin: 50px auto 10px;
+    width: 100%;
+    display: flex;
+}
+a{
+    color: white;
+    background-color: black ;
+    border: none;
+    outline: none;
+    padding:15px 30px ;
+    text-decoration: none;
+    margin: 10px 25px;
+    
+}
+#simple-color{
+    animation: borderRadius1 10s 0s infinite;
+    margin: auto;
+}
+#random-color{
+    margin: auto;
+    animation: borderRadius2 10s 0s infinite;
+}
+#gradient{
+    margin: auto;
+   animation: borderRadius3 10s 0s infinite;
+}
+@keyframes borderRadius1 {
+    0%{
+        border-radius: 20% 5px ;
     }
-    p{
-        font-size: 4vh;
+    25%{
+        border-radius: 50px 10% ;
     }
-    a{
-        padding: 10px 20px;
+    50%{
+        border-radius: 0px 15px ;
+    }
+    75%{
+        border-radius: 10% 50px ;
+    }
+    100%{
+        border-radius: 20% 5px;
     }
 }
-@media (max-device-width:320px){
-				#buttons-color{
-								display: flex;
-								flex-direction: column;
+@keyframes borderRadius2 {
+    0%{
+        border-radius: 5px 20% ;
+    }
+    25%{
+        border-radius: 10% 50px ;
+    }
+    50%{
+        border-radius: 15px 0px ;
+    }
+    75%{
+        border-radius: 50px 10% ;
+    }
+    100%{
+        border-radius: 5px 20% ;
+    }
+}
+@keyframes borderRadius3 {
+    0%{
+        border-radius: 5px 0px ;
+    }
+    25%{
+        border-radius: 20% 20% ;
+    }
+    50%{
+        border-radius: 0px 0px 15px 15px ;
+    }
+    75%{
+        border-radius: 20% 20% ;
+    }
+    100%{
+        border-radius: 5px 0px ;
+    }
+}
+.main{
+    height:100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-device-width:435px) {
+    *{
+    				font-size:70%;
+    }
+    a{
+        padding: 5px 10px;
+    }
+}
+@media (max-device-width:375px){
+				*{
+								font-size: 60%;
 				}
+    #buttons-color{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #simple-color, #random-color {
+    				width: 80%;
+    }
 }
