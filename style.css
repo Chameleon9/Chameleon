@@ -122,6 +122,7 @@ a{
     padding:15px 30px ;
     text-decoration: none;
     margin: 10px 25px;
+    font-size: 1.5em;
     
 }
 #simple-color{
@@ -142,12 +143,14 @@ a{
     }
     25%{
         border-radius: 50px 10% ;
+        box-shadow: 2px 5px 25px #303030;
     }
     50%{
         border-radius: 0px 15px ;
     }
     75%{
         border-radius: 10% 50px ;
+        box-shadow: 2px 5px 25px #303030;
     }
     100%{
         border-radius: 20% 5px;
@@ -159,12 +162,14 @@ a{
     }
     25%{
         border-radius: 10% 50px ;
+        box-shadow: 2px 5px 25px #303030;
     }
     50%{
         border-radius: 15px 0px ;
     }
     75%{
         border-radius: 50px 10% ;
+        box-shadow: 2px 5px 25px #303030;
     }
     100%{
         border-radius: 5px 20% ;
@@ -213,4 +218,17 @@ a{
     #simple-color, #random-color {
     				width: 80%;
     }
+}
+@media (max-device-height:2400px){
+    nav{
+        height: 8vh;
+    }
+    h1{
+        font-size: 6vh;
+        margin: 1vh auto;
+    }
+    p{
+        font-size: 4vh;
+    }
+    
 }
