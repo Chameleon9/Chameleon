@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa',Sans-Serif, cursive;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #20b2aa;
+    animation: changeColor 120s 0s infinite;
+    transition: 0.3s all;
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom , rgba(150,150,150,0.6) , rgba(250,250,250,0.1));
+    backdrop-filter: blur(10px);
+}
+nav>ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav>ul>li{
+    list-style-type: none;
+    margin: auto auto;
+}
+h1{
+    font-size: 3em;
+    margin: auto auto;
+    font-family: cursive ,Sans-Serif;
+}
+p{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: cursive,Sans-Serif;
+    margin: 5px auto 20px auto;
+}
+.buttons-color, .buttons-gradient{
+    margin: 50px auto 10px;
+}
+a{
+    color: white;
+    background-color: black ;
+    border: none;
+    outline: none;
+    padding:15px 30px ;
+    text-decoration: none;
+    margin: 10px 25px;
+    
+}
+#simple-color{
+    animation: borderRadius1 10s 0s infinite;
+}
+#random-color{
+    animation: borderRadius2 10s 0s infinite;
+}
+#gradient{
+   animation: borderRadius3 10s 0s infinite;
+}
+@keyframes borderRadius1 {
+    0%{
+        border-radius: 20% 5px ;
+    }
+    25%{
+        border-radius: 50px 10% ;
+    }
+    50%{
+        border-radius: 0px 15px ;
+    }
+    75%{
+        border-radius: 10% 50px ;
+    }
+    100%{
+        border-radius: 20% 5px;
+    }
+}
+@keyframes borderRadius2 {
+    0%{
+        border-radius: 5px 20% ;
+    }
+    25%{
+        border-radius: 10% 50px ;
+    }
+    50%{
+        border-radius: 15px 0px ;
+    }
+    75%{
+        border-radius: 50px 10% ;
+    }
+    100%{
+        border-radius: 5px 20% ;
+    }
+}
+@keyframes borderRadius3 {
+    0%{
+        border-radius: 5px 0px ;
+    }
+    25%{
+        border-radius: 20% 20% ;
+    }
+    50%{
+        border-radius: 0px 0px 15px 15px ;
+    }
+    75%{
+        border-radius: 20% 20% ;
+    }
+    100%{
+        border-radius: 5px 0px ;
+    }
+}
+.main{
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes changeColor {
+    0%{
+        background-color: #FF9292;
+    }
+    5%{
+        background-color: #A1E6E3;
+    }
+    10%{
+        background-color: #FFE699;
+    }
+    15%{
+        background-color: #7572F4;
+    }
+    20%{
+        background-color: #CDF2CA;
+    }
+    25%{
+        background-color: #F9989F;
+    }
+    30%{
+        background-color: #B1E693;
+    }
+    35%{
+        background-color: #5DC0A6;
+    }
+    40%{
+        background-color: #90AACB;
+    }
+    45%{
+        background-color: #73DBC4;
+    }
+    50%{
+        background-color: #FCFFA6;
+    }
+    55%{
+        background-color: #3F8F8D;
+    }
+    60%{
+        background-color: #F38BA0;
+    }
+    65%{
+        background-color: #CC99F9;
+    }
+    70%{
+        background-color: #66DE93;
+    }
+    75%{
+        background-color: #84B9EF;
+    }
+    80%{
+        background-color: #867AE9;
+    }
+    85%{
+        background-color: #2FE1D6;
+    }
+    90%{
+        background-color: #184D47;
+    }
+    95%{
+        background-color: #FAA9E0;
+    }
+    100%{
+        background-color: #FF9292;
+    }
+}
+@media (max-device-width:435px) {
+    h1{
+        font-size: 1.8em;
+    }
+    p{
+        font-size: 4vh;
+    }
+    a{
+        padding: 10px 20px;
+    }
+}
+@media (max-device-width:320px){
+				#buttons-color{
+								display: flex;
+								flex-direction: column;
+				}
+}
