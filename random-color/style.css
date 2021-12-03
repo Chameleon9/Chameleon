@@ -14,6 +14,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #20b2aa;
+    transition:0.3s all;
 }
 nav{
     height: 10vh;
