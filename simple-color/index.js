@@ -6,8 +6,8 @@ document.getElementById("color-change-button") ;
 const body = document.body;
 const colorName = document.querySelector(".colorname");
  
-colorName.innerHTML = "White" ;
-body.style.backgroundColor = "White" ;
+colorName.innerHTML = "Plum" ;
+body.style.backgroundColor = "Plum" ;
  
 colorChangeButton.addEventListener("click", function(){
 

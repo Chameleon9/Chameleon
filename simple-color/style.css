@@ -24,33 +24,19 @@ nav>ul{
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
 }
 nav>ul>li{
     list-style-type: none;
-    margin: auto auto;
+    margin: auto 50px;
 }
-nav>ul>li>a{
-    text-decoration: none;
-    color: white;
-    background: black;
-    font-size: 1.25em;
-    padding: 10px 20px;
-    border-radius: 15px;
-    margin: auto auto;
-    box-shadow: 0px 0px 10px black;
-    transition: 0.3s all;
+img{
+    height: 3em;
+    margin: auto;
+    margin-left: -10px;
 }
-nav>ul>li>a::hover{
-    text-decoration: none;
-    color: black;
-    background: white;
-    font-size: 1.3em;
-    padding: 10px 20px;
-    border-radius: 15px;
-    margin: auto auto;
-    box-shadow: 0px 0px 10px white;
-    transform: scale(1.1);
+h1{
+    font-size: 3em ;
+    font-family: cursive,Sans-Serif;
 }
 .changecolor{
     text-decoration: none;
